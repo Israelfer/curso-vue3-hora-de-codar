@@ -1,10 +1,19 @@
 <template>
-  <h1>Olá vue!</h1>
+  <div>
+  <h1>Olá, Aline!</h1>
+  <p>Meu nome é {{ nome }} e moro em {{ cidade }}.</p>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "Primeiro Component"
+  name: "Primeiro Component",
+  data() {
+    return {
+      nome: "Israel",
+      cidade: "Campinas"
+    }
+  }
 }
 </script>
 
